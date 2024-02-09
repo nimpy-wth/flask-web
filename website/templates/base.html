@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <title>Bake it Simple</title>
+  <title>Bake it Easy</title>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -97,6 +97,7 @@
               <a href="/contact" class="nav-item nav-link">Contact</a>
               <a href="/logout" class="nav-item nav-link">Log out</a>
             {% else %}
+              <a href="/welcome" id ="welcome" class="nav-item nav-link">Welcome</a>
               <a class="nav-item nav-link" id="login" href="/login">Login</a>
               <a class="nav-item nav-link" id="signUp" href="/sign-up">Sign Up</a>
             {% endif %}
@@ -164,7 +165,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">BakeItSimple</a>, All Right Reserved.
+                        &copy; <a class="border-bottom" href="#">BakeItEasy</a>, All Right Reserved.
                     </div>
                 </div>
             </div>
@@ -193,8 +194,6 @@
       src = "{{url_for('static',filename = 'index.js')}}"
     ></script>
 
-      <!-- Back to Top -->
-      <a href="#" class="btn btn-primary border-inner py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
 
       <!-- JavaScript Libraries -->
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
