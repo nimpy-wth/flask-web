@@ -2,9 +2,10 @@
 
 {% block content %} 
 <!-- <h1>Sign Up Page</h1> -->
-<form method="POST">
-    <h3 align="center">Sign Up</h3>
-    <div class="form-group">
+<div class="container-fluid" style="background-color: #e9dcc8; height: 100vh; display: flex; justify-content: center; align-items: center;">
+    <form method="POST" style="background-color: #ffffff; padding: 30px; border-radius: 8px; width: 400px; box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);">
+        <h3 align="center">Sign Up</h3>
+        <div class="form-group">
         <label for="email">Email Address</label>
         <input 
             type = "email" 
@@ -48,6 +49,6 @@
         />
     </div>
     <br />
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary" style="background-color: #7e6a53; ">Submit</button>
 </form>
 {% endblock %}
