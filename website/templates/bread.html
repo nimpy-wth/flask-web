@@ -1,0 +1,65 @@
+{% extends "base.html" %} {% block title %}bread{% endblock%}
+
+{% block content %} 
+
+<!-- Page Header Start -->
+<div class="container-fluid bg-dark bg-img p-5 mb-5">
+    <div class="row">
+        <div class="col-12" style="max-width: 600px;" >
+            <h1 class="display-4 text-uppercase text-white" >How to Bake Bread</h1>
+            <a href="/">Home</a>
+            <i class="far fa-square text-primary px-2"></i>
+            <a href="/about">About</a>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+
+<!-- Service Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="section-title text-center">
+            <h1 class="display-5 mb-5">Bread Options</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="img/service-4.jpg" alt="">
+                    </div>
+                    <div class="p-4 text-center border border-5 border-light border-top-0">
+                        <h4 class="mb-3">Basic Homemade Bread</h4>
+                        <p>Basic Homemade Bread, Buttery Cornbread, ChocolateChip Cranberry Bread</p>
+                        <a href="" class="btn btn-primary py-2 px-5">Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="img/service-5.jpg" alt="">
+                    </div>
+                    <div class="p-4 text-center border border-5 border-light border-top-0">
+                        <h4 class="mb-3">Buttery Cornbread</h4>
+                        <p>Cornbread is an all-time favorite, but there is no need to let it freak you out. In fact, the popular menu addition is actually a snap to bake up!</p>
+                        <a href="/cornbread" class="btn btn-primary py-2 px-5">Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="img/service-6.jpg" alt="">
+                    </div>
+                    <div class="p-4 text-center border border-5 border-light border-top-0">
+                        <h4 class="mb-3">ChocolateChip Cranberry Bread</h4>
+                        <p>This cranberry quick bread has a few components: the batter, streusel and a glaze. Each, though, is simple to make, and once assembled this loaf is as impressive as it is easy. Plus, it can double as a dessert!</p>
+                        <a href="" class="btn btn-primary py-2 px-5">Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+{% endblock %}
