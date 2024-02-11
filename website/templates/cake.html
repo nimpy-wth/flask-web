@@ -3,13 +3,13 @@
 {% block content %} 
 
 <!-- Page Header Start -->
-<div class="container-fluid bg-dark bg-img p-5 mb-5">
+<div class="container-fluid p-5 mb-5" style="background-color: #6c5336;">
     <div class="row">
         <div class="col-12" style="max-width: 600px;" >
-            <h1 class="display-4 text-uppercase text-white" >How to Bake Cookies</h1>
-            <a href="/home">Home</a>
-            <i class="far fa-square text-primary px-2"></i>
-            <a href="/about">About</a>
+            <h1 class="display-4 text-uppercase text-white" >How to Bake cake</h1>
+            <a href="/home" style="color: #cba77e;">Home</a>
+            <i class="far fa-square px-2" style="color: #cba77e;"></i>
+            <a href="/about" style="color: #cba77e;">About</a>
         </div>
     </div>
 </div>
@@ -25,12 +25,12 @@
             <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="service-item">
                     <div class="overflow-hidden">
-                        <img class="img-fluid" src="img/service-4.jpg" alt="">
+                        <img class="img-fluid" src="{{ url_for('static', filename='img/brownie.jpg') }}" alt="">
                     </div>
                     <div class="p-4 text-center border border-5 border-light border-top-0">
                         <h4 class="mb-3" >CHOCOLATE BROWNIE CAKE</h4>
-                        <p>This chocolate chip cookie recipe makes delicious cookies with crisp edges and chewy middles.</p>
-                        <a href="/cake/brownie" class="btn btn-primary py-2 px-5">Recipe</a>
+                        <p>The BEST brownie recipe! With crispy edges, fudgy middles, and rich chocolate flavor, these homemade brownies will disappear in no time.</p>
+                        <a href="/cake/brownie" class="btn btn-primary py-2 px-5" style="background-color: #7e6a53;">Recipe</a>
                     </div>
                 </div>
             </div>

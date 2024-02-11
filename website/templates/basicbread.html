@@ -2,13 +2,13 @@
 
 {% block content %} 
 <!-- Page Header Start -->
-<div class="container-fluid bg-dark bg-img p-5 mb-5">
+<div class="container-fluid p-5 mb-5" style="background-color: #6c5336;">
     <div class="row">
         <div class="col-12" style="max-width: 600px;" >
-            <h1 class="display-4 text-uppercase text-white" >Basic Homemade Bread</h1>
-            <a href="/">Home</a>
-            <i class="far fa-square text-primary px-2"></i>
-            <a href="/bread">Bread</a>
+            <h1 class="display-4 text-uppercase text-white" >basic homade bread</h1>
+            <a href="/home" style="color: #cba77e;">Home</a>
+            <i class="far fa-square px-2" style="color: #cba77e;"></i>
+            <a href="/bread" style="color: #cba77e;">Bread</a>
         </div>
     </div>
 </div>
@@ -101,7 +101,7 @@
             </div>
             <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute img-fluid w-100 h-100" src="img/feature.jpg" style="object-fit: cover;" alt="">
+                    <img class="position-absolute img-fluid w-100 h-100" src="{{ url_for('static', filename='img/basic2.jpg') }}" style="object-fit: cover;" alt="">
                 </div>
             </div>
         </div>

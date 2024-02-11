@@ -73,9 +73,9 @@
   <!-- Topbar End -->
 
   <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top p-0" style="background-color: #45331e;">
     <a href="base.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-        <h2 class="m-0 text-primary">BakeItEasy</h2>
+        <h2 class="m-0" style="color: #e2dac1;">BakeItEasy</h2>
     </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
@@ -83,18 +83,18 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ms-auto mx-lg-auto py-0">
             {% if user.is_authenticated %}
-              <a href="/home" id ="home" class="nav-item nav-link">Home</a>
-              <a href="/about" id ="about" class="nav-item nav-link">About</a>
+              <a href="/home" id ="home" class="nav-item nav-link" style="color: #e2dac1;">Home</a>
+              <a href="/about" id ="about" class="nav-item nav-link" style="color: #e2dac1;">About</a>
               <div class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Recipe</a>
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: #e2dac1;">Recipe</a>
                   <div class="dropdown-menu m-0">
-                      <a href="/bread" class="dropdown-item">Bread</a>
-                      <a href="/cookies" class="dropdown-item">Cookie</a>
-                      <a href="/cake" class="dropdown-item">Cake</a>
+                      <a href="/bread" class="dropdown-item" style="color: #45331e;">Bread</a>
+                      <a href="/cookies" class="dropdown-item" style="color: #45331e;">Cookie</a>
+                      <a href="/cake" class="dropdown-item" style="color: #45331e;">Cake</a>
                   </div>
               </div>
-              <a href="/contact" class="nav-item nav-link">Contact</a>
-              <a href="/logout" class="nav-item nav-link">Log out</a>
+              <a href="/contact" class="nav-item nav-link" style="color: #e2dac1;">Contact</a>
+              <a href="/logout" class="nav-item nav-link" style="color: #e2dac1;">Log out</a>
             {% else %}
               <a href="/" id ="welcome" class="nav-item nav-link">Welcome</a>
               <a class="nav-item nav-link" id="login" href="/login">Login</a>
@@ -130,7 +130,7 @@
   <!-- Navbar End -->
 
       <!-- Footer Start -->
-      <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container-fluid text-white footer mt-5 pt-5 wow fadeIn" style="background-color: #45331e;"data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
@@ -147,14 +147,14 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">How To Bake</h4>
-                    <a class="btn btn-link" href="/bread">How to Bake Bread</a>
-                    <a class="btn btn-link" href="/cake">How to Bake Cake</a>
-                    <a class="btn btn-link" href="/cookies">How to Bake Cookies</a>
+                    <a class="btn btn-link" href="/bread" style="color: #e2dac1;">How to Bake Bread</a>
+                    <a class="btn btn-link" href="/cake" style="color: #e2dac1;">How to Bake Cake</a>
+                    <a class="btn btn-link" href="/cookies" style="color: #e2dac1;">How to Bake Cookies</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="/about">About</a>
-                    <a class="btn btn-link" href="/contact">Contact</a>
+                    <a class="btn btn-link" href="/about" style="color: #e2dac1;">About</a>
+                    <a class="btn btn-link" href="/contact" style="color: #e2dac1;">Contact</a>
                 </div>
             </div>
         </div>
