@@ -6,12 +6,12 @@ import json
 
 views = Blueprint('views',__name__)
 
-@views.route('/welcome')
+@views.route('/')
 def welcome():
     return render_template("welcome.html", user=current_user)
 
 @login_required
-@views.route('/')
+@views.route('/home')
 def home():
     return render_template("home.html", user=current_user)
 
@@ -50,31 +50,31 @@ def cookies():
 def cake():
     return render_template('cake.html', user=current_user)
 
-@views.route('/cornbread')
+@views.route('/bread/cornbread')
 def cornbread():
     return render_template('cornbread.html', user=current_user)
 
-@views.route('/basicbread')
+@views.route('/bread/basicbread')
 def basicbread():
     return render_template('basicbread.html', user=current_user)
 
-@views.route('/cranberrybread')
+@views.route('/bread/cranberrybread')
 def cranberrybread():
     return render_template('cranberrybread.html', user=current_user)
 
-@views.route('/chocolatechipcookies')
+@views.route('/cookies/chocolatechipcookies')
 def chocolatechipcookies():
     return render_template('chocolatechipcookies.html', user=current_user)
 
-@views.route('/buttercookies')
+@views.route('/cookies/buttercookies')
 def buttercookies():
     return render_template('buttercookies.html', user=current_user)
 
-@views.route('/redvelvetcookies')
+@views.route('/cookies/redvelvetcookies')
 def redvelvetcookies():
     return render_template('redvelvetcookies.html', user=current_user)
 
-@views.route('/brownie')
+@views.route('/cake/brownie')
 def brownie():
     return render_template('brownie.html',user = current_user)
 
